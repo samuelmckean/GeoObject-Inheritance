@@ -8,6 +8,9 @@ class Circle(GeometricObject):
         super().__init__()
         self.__radius = radius
 
+    def __str__(self):
+        return super().__str__() + " radius: " + str(self.__radius)
+
     def getRadius(self):
         return self.__radius
 
