@@ -7,6 +7,10 @@ class Rectangle(GeometricObject):
         self.__width = width
         self.__height = height
 
+    def __str__(self):
+        return super().__str__() + " width: " + str(self.__width) \
+               + " height: " + str(self.__height)
+
     def getWidth(self):
         return self.__width
 
